@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+  
+  --color-platinum: #E5E4E2;
+  --color-obsidian: #0B1220;
+  --color-secondary-blue: #14213D;
+  --color-diamond: #F8F9FA;
+  --color-accent-gold: #D4AF37;
+  --color-accent-bronze: #C5A059;
+}
+
+/* Custom styles for luxury atmosphere */
+@layer base {
+  body {
+    background-color: var(--color-obsidian);
+    color: var(--color-diamond);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+/* Luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B1220;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #14213D;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Diamond sparkle and reflection animations */
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2) rotate(180deg);
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.8));
+  }
+}
+
+@keyframes floatLight {
+  0% {
+    transform: translate(-30%, -30%) rotate(0deg);
+  }
+  50% {
+    transform: translate(30%, 30%) rotate(180deg);
+  }
+  100% {
+    transform: translate(-30%, -30%) rotate(360deg);
+  }
+}
+
+.animate-sparkle {
+  animation: sparkle 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-float-light {
+  animation: floatLight 25s ease-in-out infinite alternate;
+}
+
+/* Premium radial glassmorphism rules */
+.luxury-glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.luxury-glass-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.luxury-text-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #E5E4E2 50%, #BCC6CC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #FFF6D3 0%, #D4AF37 50%, #AA7C11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Elegant custom cursor fallback */
+.custom-cursor-hover {
+  cursor: pointer;
+}
+

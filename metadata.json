@@ -1,0 +1,6 @@
+{
+  "name": "Novara Diamonds",
+  "description": "Exquisite luxury diamond house website with interactive 3D diamond rendering, custom jewelry designer experience, luxury storytelling timeline, and bespoke consultation bookings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
