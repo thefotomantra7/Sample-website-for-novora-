@@ -96,8 +96,8 @@ export default function CustomDesign() {
   };
 
   return (
-    <section id="custom-design-section" className="py-24 border-t border-white/5 bg-gradient-to-b from-zinc-950 to-obsidian relative">
-      <div className="absolute top-1/2 left-3/4 w-[450px]. h-[450px] bg-amber-500/[0.02] rounded-full blur-[120px] pointer-events-none" />
+    <section id="custom-design-section" className="py-24 border-t border-white/5 bg-gradient-to-b from-zinc-950 to-obsidian relative overflow-hidden">
+      <div className="absolute top-1/2 left-3/4 w-[450px] h-[450px] bg-amber-500/[0.02] rounded-full blur-[120px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
         

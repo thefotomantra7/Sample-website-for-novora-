@@ -80,7 +80,7 @@ export default function App() {
     : 'bg-stone-50 text-neutral-900 transition-colors duration-500';
 
   return (
-    <div className={`min-h-screen relative font-sans ${currentThemeClasses} ${
+    <div className={`min-h-screen w-full overflow-x-hidden relative font-sans ${currentThemeClasses} ${
       !isDarkMode ? 'light-luxury-theme' : ''
     }`}>
 
@@ -133,6 +133,7 @@ export default function App() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.0 }}
+          className="w-full overflow-x-hidden relative"
         >
           {/* 1. Navbar */}
           <Navbar
